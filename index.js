@@ -1,13 +1,12 @@
 import { Player } from "./Player.js";
+import { Time } from "./Time.js";
 
 const player1 = new Player ("Samuel", 25, "M");
 
-player1.chestTraining("L");
-
-player1.armsTraining("L");
-
-player1.legsTraining("H");
-
-player1.glutesTraining("H");
+const time = new Time(3);
 
 player1.status;
+
+time.dayAfter();
+
+console.log(time)
