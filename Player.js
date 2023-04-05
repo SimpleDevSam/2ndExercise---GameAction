@@ -35,7 +35,8 @@ export class Player {
     //Defining getter to retrieve player status
 
     get status () {
-        return console.log([this.chestlenght, this.armslenght, this.legslenght, this.gluteslenght]);
+        return console.log("Chest lenght:" +this.chestlenght+"\nArms lenght:"+ 
+        this.armslenght + "\nLegs lenght:" +this.legslenght+"\nGlutes lenght"+ this.gluteslenght);
     }
 
      //Creating the method which train chest and boost their chest status
@@ -79,9 +80,9 @@ export class Player {
             this.armslenght = (this.armslenght * 1.002).toFixed(2);
             let sizeGained = (this.armslenght*0.002).toFixed(2);
 
-            return console.log("\nYou've chosen to train Chest! Good for you!\n Previous Lenght :"+
+            return console.log("\nYou've chosen to train Arms! Good for you!\n Previous Lenght :"+
              previousLenght +" \n Gained "+ sizeGained + 
-            " of Chess Lenght! \n Now you have " + this.armslenght +"cm²");
+            " of Arms Lenght! \n Now you have " + this.armslenght +"cm²");
 
         } else {
             
@@ -89,9 +90,9 @@ export class Player {
             this.armslenght = (this.armslenght * 1.005).toFixed(2);
             let sizeGained = (this.armslenght*0.005).toFixed(2);
 
-            return console.log("\nYou've chosen to train Chest! Good for you!\n Previous Lenght :"+ previousLenght +" \n Gained "+ 
+            return console.log("\nYou've chosen to train Legs! Good for you!\n Previous Lenght :"+ previousLenght +" \n Gained "+ 
             sizeGained + 
-            " of Chess Lenght! \n Now you have " + this.armslenght +"cm²")
+            " of Legs Lenght! \n Now you have " + this.armslenght +"cm²")
         }
 
     }
@@ -115,9 +116,9 @@ export class Player {
             this.gluteslenght = (this.armslenght * 1.005).toFixed(2);
             let sizeGained = (this.gluteslenght*0.005).toFixed(2);
 
-            return console.log("\nYou've chosen to train Chest! Good for you!\n Previous Lenght :"+ previousLenght +" \n Gained "+ 
+            return console.log("\nYou've chosen to train Glutes! Good for you!\n Previous Lenght :"+ previousLenght +" \n Gained "+ 
             sizeGained + 
-            " of Chess Lenght! \n Now you have " + this.gluteslenght +"cm²")
+            " of Glutes Lenght! \n Now you have " + this.gluteslenght +"cm²")
         }
 
     }
@@ -131,19 +132,19 @@ export class Player {
             this.legslenght = (this.legslenght * 1.002).toFixed(2);
             let sizeGained = (this.legslenght*0.002).toFixed(2);
 
-            return console.log("\nYou've chosen to train Chest! Good for you!\n Previous Lenght :"+
+            return console.log("\nYou've chosen to train Legs! Good for you!\n Previous Lenght :"+
              previousLenght +" \n Gained "+ sizeGained + 
-            " of Chess Lenght! \n Now you have " + this.legslenght +"cm²");
+            " of LegsLenght! \n Now you have " + this.legslenght +"cm²");
 
         } else {
             
             let previousLenght = this.legslenght;
-            this.legslenght = (this.armslenght * 1.005).toFixed(2);
+            this.legslenght = (this.legslenght * 1.005).toFixed(2);
             let sizeGained = (this.legslenght*0.005).toFixed(2);
 
-            return console.log("\nYou've chosen to train Chest! Good for you!\n Previous Lenght :"+ previousLenght +" \n Gained "+ 
+            return console.log("\nYou've chosen to train Legs! Good for you!\n Previous Lenght :"+ previousLenght +" \n Gained "+ 
             sizeGained + 
-            " of Chess Lenght! \n Now you have " + this.legslenght +"cm²")
+            " of Legs Lenght! \n Now you have " + this.legslenght +"cm²")
         }
 
     }
